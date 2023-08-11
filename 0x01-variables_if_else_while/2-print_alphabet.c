@@ -8,9 +8,9 @@
 
 int main(void)
 {
-int letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-putchar("letter");
+int i;
+for (i = 'a'; i <= 'z'; i++)
+putchar("i");
 putchar("\n");
 return (0);
 }
