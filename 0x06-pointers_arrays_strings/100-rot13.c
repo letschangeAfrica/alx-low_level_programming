@@ -24,3 +24,5 @@ break;
 }
 a++;
 }
+return (s);
+}
