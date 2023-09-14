@@ -28,7 +28,7 @@ exit(99);
 }
 if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
 {
-printf("Erro\n");
+printf("Error\n");
 exit(100);
 }
 printf("%d\n", get_op_func(op)(num1, num2));
