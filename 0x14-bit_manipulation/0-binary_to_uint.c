@@ -24,7 +24,7 @@ return (0);
 }
 if (b[len] & 1)
 {
-ui += base_two;
+uni += base_two;
 }
 }
 return (uni);
