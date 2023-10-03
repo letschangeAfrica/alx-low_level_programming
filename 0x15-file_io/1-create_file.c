@@ -14,7 +14,7 @@ int nletters;
 int nwr;
 if (!filename)
 return (-1);
-fd = open(filename, 0_CREAT | O_WRONGLY | O_TRUNC, 0600);
+fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 if (!text_content)
@@ -22,7 +22,7 @@ text_content = "";
 for (nletters = 0; text_content[nletters]; nletters++)
 ;
 nwr = write(fd, text_content, nletters);
-if (rwr == -1)
+if (nwr == -1)
 return (-1);
 close(fd);
 return (1);
