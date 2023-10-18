@@ -19,7 +19,8 @@ int input_buffer_index = 0;
 extern char **environ;
 
 int main_2(void);
-int main(int argc, char *argv[]);
+int main(void);
+void execute_command(char *command);
 void handle_exit(void);
 void handle_env(void);
 void execute_external_command(char **args);
@@ -27,9 +28,14 @@ void tokenize_input(char *buffer, char **args);
 char *custom_getline(void);
 int read_input(void);
 char *find_newline(void);
-char *extract_line(char *newline);
-void handle_unsetenv(char **args);
-void handle_setenv(char **args);
-void handle_cd(char **args);
+char *extract_line(char* newline);
+void execute_command(char **args);
+void handle_unsetenv(char** args);
+void handle_setenv(char** args);
+void handle_cd(char** args);
+void handle_alias(char** args);
+void handle_variables(char** args);
+void handle_comments(char* command);
+void execute_file(char* filename);
 
 #endif
