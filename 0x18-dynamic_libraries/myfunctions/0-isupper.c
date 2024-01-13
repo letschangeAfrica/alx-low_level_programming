@@ -10,4 +10,4 @@
 int _isupper(int c)
 {
 	return (c >= 65 && c <= 90);
-}11;rgb:0000/0000/0000
+}
