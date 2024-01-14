@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * add - A function that adds two integers.
+ * mul - A function that adds two integers.
  * @a: integer number
  * @b: integer number
  *

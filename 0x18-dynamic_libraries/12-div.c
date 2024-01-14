@@ -1,0 +1,13 @@
+#include <stdio.h>
+/**
+ * div - A function that divides two integers.
+ * @a: integer number
+ * @b: integer number
+ *
+ * Return: Result of the division.
+*/
+
+int div(int a, int b)
+{
+	return (a / b);
+}
